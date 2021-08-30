@@ -1,14 +1,21 @@
+/* <!----------------------------------------------------------------------------------------
+-------------------------Aurthor : Ashik Ahamed--------------------------------
+________________feel free to do experiment wtih the code__________________
+________________do follow me on 'gitHub.com/ahamedashik01/'____________
+________________give a star to the repository___________________
+------------------------------------------------------->
+ */
+
+
 *{
     margin: 0;
     padding: 0;
 }
-.parent {
-    /* margin-left: 10px; */
-}
+
 .child{
     border-radius: 10px;
     height: 600px;
-    width: 350px;
+    width: 330px;
     background-color: #22a6b3;
     position: relative;
     overflow: hidden;
@@ -46,6 +53,7 @@
     animation: wave 4s infinite linear 1s;
     z-index: 1;
 }
+/* amimation */
 @keyframes wave {
     100%{
         transform: rotate(360deg);
@@ -53,9 +61,10 @@
     
 }
 .info{
+    width: 300px;
     position: absolute;
-    bottom: 10%;
-    left: 27%;
+    left: 16px;
+    top: 60%;
     z-index: 7;
     
 }

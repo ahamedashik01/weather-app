@@ -1,3 +1,10 @@
+<!----------------------------------------------------------------------------------------
+-------------------------Aurthor : Ashik Ahamed--------------------------------
+________________feel free to do experiment wtih the code__________________
+________________'follow me on gitHub.com/ahamedashik01/'____________
+________________give a star to the repository___________________
+------------------------------------------------------->
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -6,44 +13,49 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather App</title>
+    <!-- fontawesome -->
     <script src="https://kit.fontawesome.com/f4883431e7.js" crossorigin="anonymous"></script>
+    <!-- bootstrap cdn  -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <!-- custom css -->
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <section class="container parent p-3 ">
         <div class="container shadow child mx-auto mt-5">
+            <!-- background-animation div  -->
             <div class="wave-1"></div>
             <div class="wave-2"></div>
             <div class="wave-3"></div>
+            <!-- input field  -->
             <div class="input-group my-3">
-                <input type="text" class="form-control input " placeholder="Enter a location for Weather"
-                    aria-label="Recipient's username" aria-describedby="button-addon2">
-                <button class="btn btn-outline-info text-white" type="button" id="button-addon2">Button</button>
+                <input id="input-field" type="text" class="form-control input "
+                    placeholder="Enter a location for Weather" aria-label="Recipient's username"
+                    aria-describedby="button-addon2">
+                <button onclick="loadWeather()" class="btn btn-outline-info text-white" type="button"
+                    id="search-btn">Search</button>
             </div>
-            <div class="weathercon my-5 text-center">
-                <i class="fas fa-sun" style="font-size:5em; color: rgba(230, 169, 57, 0.932);"></i>
+            <!-- weather-icon  -->
+            <div id="weather-icon" class="weathercon my-5 text-center">
+                <i class="fas fa-cloud-moon-rain" style="font-size:5em; color: rgba(231, 231, 192, 0.932);"></i>
             </div>
-            <div class="info text-center ">
-
-                <h2><i class="fas fa-street-view"></i> Dhaka , Bd</h2>
-                <p>WED | OCT 23 | 10:49 AM</p>
+            <!-- weather updates  -->
+            <div id="display-box" class="info text-center ">
+                <h2><i class="fas fa-street-view"></i> Dhaka , BD</h2>
+                <p>cloud | Feels Like - 33°C | haze</p>
                 <h1>31.56°C</h1>
-                <p>Min 31.56°C | Max 31.56°C</p>
+                <p>Min - 31.56°C | Max - 31.56°C</p>
             </div>
         </div>
     </section>
 
-
-
-
-
-
+    <!-- bootstrap js bundle  -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
         crossorigin="anonymous"></script>
+    <!-- custom js -->
     <script src="script.js"></script>
 </body>
 
