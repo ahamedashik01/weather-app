@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.child{
+    border-radius: 10px;
+    height: 600px;
+    width: 400px;
+    background-color: #22a6b3;
+    position: relative;
+    overflow: hidden;
+}
+.wave-1{
+    border-radius: 50%;
+    height: 850px;
+    width: 700px;
+    background-color: #b6e5e9;
+    position: absolute;
+    left:-40% ;
+    top: 42%;
+    animation: wave 4s infinite linear;
+    z-index: 5;
+}
+.wave-2{
+    border-radius: 50%;
+    height: 900px;
+    width: 700px;
+    background-color: #dff9fb80;
+    position: absolute;
+    right:  -30%;
+    top: 38%;
+    animation: wave 4s infinite linear;
+    z-index: 3;
+}
+.wave-3{
+    border-radius: 48%;
+    height: 850px;
+    width: 700px;
+    background-color: #dff9fb34;
+    position: absolute;
+    left:-40% ;
+    top: 37%;
+    animation: wave 4s infinite linear;
+    z-index: 1;
+}
+@keyframes wave {
+    100%{
+        transform: rotate(360deg);
+    }
+    
+}
+.info{
+    position: absolute;
+    bottom: 10%;
+    left: 27%;
+    z-index: 7;
+    
+}
